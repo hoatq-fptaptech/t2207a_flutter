@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:t2207a_flutter/screen/home/ui/home_carousel.dart';
+import 'package:t2207a_flutter/screen/home/ui/home_category.dart';
 
 class HomeScreen extends StatelessWidget{
   const HomeScreen({super.key});
@@ -10,7 +11,7 @@ class HomeScreen extends StatelessWidget{
      return const Column(
        children: [
           HomeCarousel(),
-         Text("First section"),
+         HomeCategory(),
          Text("Second section")
        ],
      );
