@@ -13,4 +13,9 @@ class CartBloc extends ChangeNotifier{
       notifyListeners();
       print(_cartItems.length);
     }
+
+    void removeCart(int itemId){
+      _cartItems.removeWhere((element) => element.id == itemId);
+      notifyListeners();
+    }
 }
